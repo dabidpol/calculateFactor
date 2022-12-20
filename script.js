@@ -19,3 +19,20 @@ function getDuration(){
     return x
 }
 
+function calculateAmort(){
+    let principal = parseInt(getPrincipal());
+
+    let amort = (principal/1000)*calculate();
+    let mri = (principal/1000)* 0.76;
+   
+    let monthlyamortization = (amort + mri).toFixed(2);
+    
+    document.getElementById("amortanswer").innerHTML = "Computed amortization is: " + amort + " and MRI is: " + mri
+    document.getElementById("monthlyamortization").innerHTML = "Total Monthly Amortization = " + monthlyamortization
+    return monthlyamortization
+}
+
+function getPrincipal(){
+    const x = document.getElementById("principal").value;
+    return x
+}

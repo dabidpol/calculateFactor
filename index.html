@@ -11,7 +11,7 @@
 <body>
 
     <div>
-        <h1>Monthly Amortization Factor Calculator</h1>
+        <h1>Amortization Factor Calculator</h1>
     </div>
 
     <div>
@@ -38,6 +38,24 @@
         </p>
     </div>
 
+    <div>
+        <h2>Sample Amortization + MRI Computation</h2>
+    </div>
+
+    <div class="sample">
+        <p>Please enter the Principal Amount:
+            <input type="number" id="principal" value="0">
+        </p>
+        <p>
+            <button id="calc" onclick="calculateAmort()">Calculate Amort</button>
+        </p>
+        <p>
+            <h2 id="amortanswer"></h2>
+        </p>
+        <p>
+            <h1 id="monthlyamortization"></h1>
+        </p>
+    </div>
     
 </body>
 </html>
